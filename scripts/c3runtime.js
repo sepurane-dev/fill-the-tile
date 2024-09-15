@@ -4790,6 +4790,7 @@ self.C3_JsPropNameTable = [
 	{PlayButton: 0},
 	{GameTitle: 0},
 	{Audio: 0},
+	{UIText2: 0},
 	{Flash: 0},
 	{Tiles: 0},
 	{Detectors: 0},
@@ -4835,6 +4836,7 @@ self.InstanceType = {
 	PlayButton: class extends self.ISpriteInstance {},
 	GameTitle: class extends self.ISpriteInstance {},
 	Audio: class extends self.IInstance {},
+	UIText2: class extends self.ITextInstance {},
 	Tiles: class extends self.ISpriteInstance {},
 	Detectors: class extends self.ISpriteInstance {},
 	Paths: class extends self.ISpriteInstance {},
@@ -5127,6 +5129,7 @@ self.C3_ExpressionFuncs = [
 			const n1 = p._GetNode(1);
 			return () => (f0(0) - (n1.ExpObject() / 2));
 		},
+		() => 99,
 		() => "Other",
 		p => {
 			const n0 = p._GetNode(0);
